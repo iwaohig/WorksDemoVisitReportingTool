@@ -1,0 +1,77 @@
+/* ページ全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* フォームのスタイル */
+form {
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* チェックボックスとラベルを横並びにする */
+.interest-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+/* チェックボックスとラベル間の間隔を設定 */
+.interest-checkbox label {
+    margin-left: 10px;
+}
+
+/* フォーム内の各要素のスタイル */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: calc(100% - 10px); /* 幅を100%にして、余白を考慮 */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px; /* テキストエリアの高さを指定 */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* トグルスイッチのスタイル */
+.js-switch {
+    display: none; /* 標準のチェックボックスを非表示にする */
+}
+
+.switchery {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* トグルスイッチの親要素に余白を追加 */
+.form-group:last-child {
+    margin-bottom: 0;
+}
